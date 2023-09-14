@@ -47,7 +47,7 @@ jobs:
     deploy:
         name: Deploy
         runs-on: ubuntu-latest
-        environment: main
+        environment: stag
 
         steps:
             - name: Checkout
