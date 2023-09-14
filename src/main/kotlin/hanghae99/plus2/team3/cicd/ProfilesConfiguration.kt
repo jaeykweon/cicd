@@ -25,6 +25,12 @@ class ProfilesConfiguration {
         return SuccessCicdService()
     }
 
+    @Profile("test")
+    @Bean
+    fun test(): SuccessCicdService {
+        return SuccessCicdService()
+    }
+
     @Profile("fail")
     @Bean
     fun fail(): FailCicdService {
