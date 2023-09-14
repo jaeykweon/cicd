@@ -13,9 +13,15 @@ class ProfilesConfiguration {
         return SuccessCicdService()
     }
 
-    @Profile("alpha")
+    @Profile("stag")
     @Bean
-    fun alpha(): SuccessCicdService {
+    fun stag(): SuccessCicdService {
+        return SuccessCicdService()
+    }
+
+    @Profile("dev")
+    @Bean
+    fun dev(): SuccessCicdService {
         return SuccessCicdService()
     }
 
